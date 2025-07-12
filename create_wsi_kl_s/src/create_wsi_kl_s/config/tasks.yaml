@@ -88,32 +88,28 @@ description_evaluation_task:
 
 finalization_task:
   description: >
-    Transform the validated ccRCC description into a final, production-ready JSON object that meets the highest standards of 
-    medical data structuring and computational compatibility. Execute comprehensive formatting, organization, and data-export tasks including:
-    - Professional JSON structure: implement standardized medical data hierarchy and organization
-    - Consistent JSON formatting: apply proper syntax, nested objects, arrays, and data type specifications
-    - Medical data standards: ensure compliance with clinical data standards and renal pathology reporting guidelines
-    - Data validation: implement comprehensive validation checks for JSON integrity and medical accuracy
-    - Schema compliance: ensure adherence to medical informatics standards and digital pathology data schemas
-    - UTF-8 encoding: implement proper character encoding and escape sequences for international compatibility
-    - Production readiness: ensure JSON meets standards for medical systems, databases, and API integration
-    - Accessibility optimization: structure JSON for easy parsing and programmatic access
-    - Professional presentation: create a polished, standards-compliant JSON object suitable for clinical and research environments
-    - Version control: implement proper data versioning and change tracking metadata
-    - Structured data export: construct a valid JSON object where ccRCC morphological features are mapped to standardized data structures
+    Produce a concise dictionary-of-list JSON summary for the validated Clear Cell Renal Cell Carcinoma (ccRCC) description.
+    Requirements:
+    - The output must be a single-level JSON object whose only key is the full cancer type string (e.g., "Clear Cell Renal Cell Carcinoma (ccRCC)").
+    - The value for that key is an array of 5–15 short, clinically relevant sentences covering gross appearance, microscopic morphology, key molecular/pathogenetic events, and typical clinical presentation.
+    - Each sentence must:
+        • Start with a capital letter and end with a period.
+        • Be self-contained plain text (no markdown formatting, bullet symbols, or nested objects).
+        • Avoid redundancy; deduplicate similar statements.
+    - Order sentences logically (macroscopic → microscopic → molecular → clinical).
+    - Ensure strictly valid JSON: UTF-8, double-quoted keys and strings, no trailing commas or comments.
+    - Optimise for downstream LLM/API consumption (compact, readable, minimal nesting).
   expected_output: >
-    A production-ready JSON object containing:
-    - Properly structured nested objects and arrays with clear hierarchical organization
-    - Consistent, professional JSON formatting throughout with appropriate data types
-    - Complete metadata including cancer type, creation date, version, and data source information
-    - Professional medical data structure suitable for clinical and research applications
-    - All content validated, finalized, and ready for integration into digital pathology systems
-    - Proper formatting of nested structures, arrays, and complex data relationships
-    - Clear data organization and logical flow for easy programmatic access
-    - Professional data encoding and formatting appropriate for medical informatics
-    - UTF-8 compliance with proper character encoding and escape sequences
-    - Quality assurance summary confirming final JSON meets all specified standards
-    - Version control information and change log summary in metadata
-    - Ready for deployment in medical databases, AI applications, or clinical decision support systems
-    - Valid JSON syntax (UTF-8, double-quoted keys/values, no comments) optimized for downstream computational applications
+    A valid JSON object in the requested dictionary-of-list format, for example:
+    {
+      "Clear Cell Renal Cell Carcinoma (ccRCC)": [
+        "On gross examination, the tumor characteristically presents as a yellow mass.",
+        "Microscopically, the neoplastic cells are defined by their clear cytoplasm.",
+        "A key pathogenetic event involves the loss of the VHL tumor suppressor gene.",
+        "This genetic loss leads to an increase in the HIF transcription factor.",
+        "Increased HIF subsequently promotes the upregulation of VEGF and PDGF.",
+        "The pathogenesis is also associated with an increase in insulin-like growth factor 1.",
+        "Clinical presentation may include hematuria, flank pain, and a palpable mass."
+      ]
+    }
   agent: wsi_cancer_agent
