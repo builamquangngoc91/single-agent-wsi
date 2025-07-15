@@ -1,96 +1,125 @@
 planning_task:
   description: >
-    Generate a comprehensive, evidence-based content plan for describing Clear Cell Renal Cell Carcinoma (ccRCC) based on advanced WSI analysis methodologies.
+    Generate a comprehensive, evidence-based content plan for describing {cancer_type} based on advanced WSI analysis methodologies.
     The plan must include:
-    - Systematic structure and hierarchical organization for ccRCC description
-    - Key morphological identification characteristics of clear cell morphology to be analyzed and documented
-    - Visual and architectural features specific to ccRCC including vascular patterns and growth architecture
-    - Cellular characteristics including clear cell cytoplasm, nuclear features, and mitotic activity
-    - Immunohistochemical markers relevant to ccRCC diagnosis (CD10, RCC, CK7, Carbonic Anhydrase IX)
-    - Differential diagnosis considerations with other renal neoplasms
-    - Clinical correlation requirements and prognostic factors (Fuhrman grade, stage)
-    - Quality assessment criteria and validation checkpoints for ccRCC
+    - Systematic structure and hierarchical organization for {cancer_type} description
+    - Key morphological identification characteristics specific to {cancer_type} to be analyzed and documented
+    - Visual and architectural features specific to {cancer_type} including relevant patterns and growth architecture
+    - Cellular characteristics including cytoplasm, nuclear features, and mitotic activity relevant to {cancer_type}
+    - Immunohistochemical markers relevant to {cancer_type} diagnosis
+    - Differential diagnosis considerations with other relevant neoplasms
+    - Clinical correlation requirements and prognostic factors specific to {cancer_type}
+    - Quality assessment criteria and validation checkpoints for {cancer_type}
     - JSON output specifications and data structure requirements
     - Integration with ISUP renal pathology guidelines and WHO classification standards
   expected_output: >
     A detailed JSON structure plan containing:
-    - Executive summary of ccRCC with epidemiological context and key identifiers
+    - Executive summary of {cancer_type} with epidemiological context and key identifiers
     - Comprehensive data schema with main categories and subcategories for JSON organization
-    - Morphological identification characteristics framework with specific ccRCC criteria
-    - Visual feature analysis guidelines for clear cell morphology and vascular patterns
-    - Cellular architecture evaluation parameters for ccRCC-specific features
-    - Immunohistochemical panel specifications and interpretation guidelines for renal markers
-    - Differential diagnosis matrix with distinguishing features from other renal tumors
-    - Clinical correlation requirements and Fuhrman grading integration
+    - Morphological identification characteristics framework with specific {cancer_type} criteria
+    - Visual feature analysis guidelines for {cancer_type} morphology and relevant patterns
+    - Cellular architecture evaluation parameters for {cancer_type}-specific features
+    - Immunohistochemical panel specifications and interpretation guidelines for relevant markers
+    - Differential diagnosis matrix with distinguishing features from other relevant tumors
+    - Clinical correlation requirements and appropriate grading integration
     - JSON validation criteria and data quality protocols
     - Output specifications for structured JSON format with key-value mappings
   agent: wsi_cancer_agent
 
 description_generation_task:
   description: >
-    Based on the comprehensive plan from the planning task, generate detailed, medically accurate descriptions for Clear Cell Renal Cell Carcinoma (ccRCC) 
+    Based on the comprehensive plan from the planning task, generate detailed, medically accurate descriptions for {cancer_type} 
     using advanced WSI analysis expertise. Focus specifically on:
-    - Morphological identification characteristics: detailed clear cell morphology, nuclear features, cytoplasmic characteristics, 
-      and architectural patterns visible in ccRCC WSI analysis
-    - Visual and architectural features: comprehensive description of ccRCC tissue organization, growth patterns, delicate vascular network, 
+    - Morphological identification characteristics: detailed cellular morphology, nuclear features, cytoplasmic characteristics, 
+      and architectural patterns visible in {cancer_type} WSI analysis
+    - Visual and architectural features: comprehensive description of {cancer_type} tissue organization, growth patterns, vascular networks, 
       and spatial relationships as observed in whole slide images
-    - Cellular characteristics: nuclear-to-cytoplasmic ratios, mitotic activity, cellular pleomorphism, and Fuhrman nuclear grading
-    - Tissue architecture: solid growth patterns, trabecular arrangements, cystic formations, and infiltrative patterns specific to ccRCC
-    - Diagnostic markers: specific morphological features that aid in definitive ccRCC diagnosis
-    - Immunohistochemical correlations: relationship between ccRCC morphology and renal cell markers
-    - Histopathological grading: integration of morphological features with Fuhrman grading system
+    - Cellular characteristics: nuclear-to-cytoplasmic ratios, mitotic activity, cellular pleomorphism, and relevant grading systems
+    - Tissue architecture: growth patterns, arrangements, formations, and infiltrative patterns specific to {cancer_type}
+    - Diagnostic markers: specific morphological features that aid in definitive {cancer_type} diagnosis
+    - Immunohistochemical correlations: relationship between {cancer_type} morphology and relevant markers
+    - Histopathological grading: integration of morphological features with appropriate grading systems
     - Vascular and capsular involvement: assessment of invasion patterns and metastatic potential
-    - Clinical significance: correlation between ccRCC morphological findings and clinical outcomes
+    - Clinical significance: correlation between {cancer_type} morphological findings and clinical outcomes
     Utilize the comprehensive knowledge base to ensure medical accuracy, current ISUP guideline compliance, and completeness.
   expected_output: >
     A comprehensive, medically accurate JSON object containing:
-    - Detailed morphological identification characteristics with specific ccRCC cellular and architectural features
+    - Detailed morphological identification characteristics with specific {cancer_type} cellular and architectural features
     - Visual and architectural features with comprehensive WSI-specific descriptions including magnification references
-    - Cellular characteristics analysis with quantitative and qualitative assessments for clear cell morphology
-    - Tissue architecture description with pattern recognition and classification specific to ccRCC
+    - Cellular characteristics analysis with quantitative and qualitative assessments for {cancer_type} morphology
+    - Tissue architecture description with pattern recognition and classification specific to {cancer_type}
     - Histopathological markers and diagnostic features with clinical correlation
-    - Immunohistochemical profile and renal marker correlations (CD10, RCC, CK7, CAIX)
-    - Differential diagnosis considerations with distinguishing morphological features from other renal neoplasms
-    - Clinical significance and prognostic implications based on ccRCC morphological findings
-    - Fuhrman grading and staging correlations
+    - Immunohistochemical profile and relevant marker correlations
+    - Differential diagnosis considerations with distinguishing morphological features from other relevant neoplasms
+    - Clinical significance and prognostic implications based on {cancer_type} morphological findings
+    - Appropriate grading and staging correlations
     - Structured as valid JSON with clear key-value pairs and nested objects for complex data
     - UTF-8 compliant with proper escaping and formatting for direct computational use
   agent: wsi_cancer_agent
 
+description_validation_task:
+  description: >
+    Validate and verify the existing {cancer_type} descriptions from the knowledge base against current medical standards and guidelines.
+    For JSON source data, focus on:
+    - Medical accuracy validation: verify all {cancer_type} descriptions against current pathology literature and guidelines
+    - Completeness assessment: ensure descriptions cover all essential {cancer_type} morphological features
+    - Terminology consistency: validate proper usage of standardized pathology terminology
+    - Guideline compliance: verify adherence to WHO and international pathology standards
+    - Clinical relevance: assess diagnostic utility and clinical significance of descriptions
+    - Content quality: identify accurate, well-structured, and clinically useful descriptions
+    - Evidence-based validation: cross-reference descriptions with established medical literature
+    - Diagnostic accuracy: ensure descriptions support accurate {cancer_type} identification
+    - Professional standards: verify descriptions meet pathology reporting requirements
+    - Knowledge base integration: validate descriptions align with current medical knowledge
+    Do NOT generate new descriptions - only validate, verify, and select the most accurate existing ones.
+  expected_output: >
+    A validated JSON object containing:
+    - Verified {cancer_type} descriptions that meet medical accuracy standards
+    - Quality assessment results with validation criteria and scores
+    - Compliance verification with international pathology guidelines
+    - Selected high-quality descriptions from the knowledge base
+    - Validation summary with specific medical accuracy metrics
+    - Terminology consistency verification results
+    - Clinical relevance assessment for each validated description
+    - Evidence-based validation references and citations
+    - Professional standard compliance confirmation
+    - Structured as valid JSON with clear validation metadata
+  agent: wsi_cancer_agent
+
 description_evaluation_task:
   description: >
-    Perform comprehensive medical review and validation of the ccRCC description generated by the description generation task. 
+    Perform comprehensive medical review and validation of the {cancer_type} description generated by the description generation task. 
     Conduct systematic evaluation including:
-    - Medical accuracy verification: validate all ccRCC morphological descriptions against current renal pathology literature and ISUP guidelines
-    - Completeness assessment: ensure all required ccRCC sections from the original plan are thoroughly addressed
-    - Terminology consistency: verify proper usage of standardized renal pathology terminology and ccRCC nomenclature
-    - Clarity and readability: assess professional language usage and comprehensibility for renal pathologists
-    - Guideline compliance: verify adherence to ISUP, WHO, and other relevant international renal pathology standards
-    - Diagnostic accuracy: validate that morphological descriptions support accurate ccRCC diagnostic conclusions
-    - Content quality assessment: identify weak, unclear, or insufficiently detailed sections regarding ccRCC features
-    - Consistency verification: ensure uniform approach and terminology throughout the ccRCC description
-    - Gap identification: detect missing critical information or inadequate coverage of important ccRCC features
+    - Medical accuracy verification: validate all {cancer_type} morphological descriptions against current pathology literature and relevant guidelines
+    - Completeness assessment: ensure all required {cancer_type} sections from the original plan are thoroughly addressed
+    - Terminology consistency: verify proper usage of standardized pathology terminology and {cancer_type} nomenclature
+    - Clarity and readability: assess professional language usage and comprehensibility for pathologists
+    - Guideline compliance: verify adherence to WHO and other relevant international pathology standards
+    - Diagnostic accuracy: validate that morphological descriptions support accurate {cancer_type} diagnostic conclusions
+    - Content quality assessment: identify weak, unclear, or insufficiently detailed sections regarding {cancer_type} features
+    - Consistency verification: ensure uniform approach and terminology throughout the {cancer_type} description
+    - Gap identification: detect missing critical information or inadequate coverage of important {cancer_type} features
     - JSON structure validation: verify proper JSON formatting, syntax, and data organization
-    Remove or significantly improve any content that does not meet professional medical standards for ccRCC diagnosis.
+    Remove or significantly improve any content that does not meet professional medical standards for {cancer_type} diagnosis.
   expected_output: >
     A rigorously validated, cleaned-up JSON object with:
     - All medical inaccuracies corrected or clearly flagged for expert review
     - Weak, unclear, or insufficiently detailed sections removed or substantially improved
-    - Consistent, professional renal pathology terminology throughout
-    - Clear, logical JSON organization that follows evidence-based renal pathology reporting standards
-    - Comprehensive coverage of all morphological features relevant to ccRCC diagnosis
+    - Consistent, professional pathology terminology throughout
+    - Clear, logical JSON organization that follows evidence-based pathology reporting standards
+    - Comprehensive coverage of all morphological features relevant to {cancer_type} diagnosis
     - Proper integration of clinical correlations and prognostic factors
     - Detailed validation summary with specific metrics and criteria
-    - Compliance verification with international renal pathology guidelines
+    - Compliance verification with international pathology guidelines
     - Syntactically valid JSON structure with proper formatting and encoding
     - Quality assurance confirmation for computational and clinical use
   agent: wsi_cancer_agent
 
 finalization_task:
   description: >
-    Produce a concise dictionary-of-list JSON summary for the validated Clear Cell Renal Cell Carcinoma (ccRCC) description.
+    Produce a concise dictionary-of-list JSON summary for the validated {cancer_type} description.
     Requirements:
-    - The output must be a single-level JSON object whose only key is the full cancer type string (e.g., "Clear Cell Renal Cell Carcinoma (ccRCC)").
+    - The output must be a single-level JSON object whose only key is the full cancer type string: "{cancer_type}".
     - The value for that key is an array of 5–15 short, clinically relevant sentences covering gross appearance, microscopic morphology, key molecular/pathogenetic events, and typical clinical presentation.
     - Each sentence must:
         • Start with a capital letter and end with a period.
@@ -102,14 +131,11 @@ finalization_task:
   expected_output: >
     A valid JSON object in the requested dictionary-of-list format, for example:
     {
-      "Clear Cell Renal Cell Carcinoma (ccRCC)": [
-        "On gross examination, the tumor characteristically presents as a yellow mass.",
-        "Microscopically, the neoplastic cells are defined by their clear cytoplasm.",
-        "A key pathogenetic event involves the loss of the VHL tumor suppressor gene.",
-        "This genetic loss leads to an increase in the HIF transcription factor.",
-        "Increased HIF subsequently promotes the upregulation of VEGF and PDGF.",
-        "The pathogenesis is also associated with an increase in insulin-like growth factor 1.",
-        "Clinical presentation may include hematuria, flank pain, and a palpable mass."
+      "{cancer_type}": [
+        "Example sentences describing gross examination findings.",
+        "Example sentences describing microscopic morphology.",
+        "Example sentences describing key molecular/pathogenetic events.",
+        "Example sentences describing typical clinical presentation."
       ]
     }
   agent: wsi_cancer_agent

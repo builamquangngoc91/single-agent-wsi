@@ -1,0 +1,78 @@
+{
+  "Breast Cancer Lymph Node Metastasis": [
+    "Tumor The normal lymph node architecture is partially effaced by metastatic carcinoma, which characteristically involves the subcapsular and medullary sinuses.",
+    "Tumor Neoplastic cells are arranged in variably sized, cohesive nests and solid sheets that expand the sinusoidal spaces.",
+    "Tumor The tumor cells exhibit significant nuclear pleomorphism, with irregular contours, vesicular chromatin, and prominent eosinophilic nucleoli.",
+    "Tumor Cytoplasm is typically moderate to abundant and eosinophilic, with indistinct cell borders that may create a syncytial appearance.",
+    "Tumor Infiltrative nests of carcinoma are seen extending through the nodal capsule into the surrounding perinodal adipose tissue.",
+    "Tumor Within the nodal parenchyma, solid plugs of tumor cells are identified distending afferent lymphatic vessels.",
+    "Tumor Metastatic lobular carcinoma can present a distinct architectural challenge, often showing a diffuse, single-cell infiltrate of discohesive cells that mimics a lymphoproliferative process.",
+    "Tumor Foci of central necrosis are present within larger tumor aggregates, a feature that can be highlighted by keratin immunostains when extensive.",
+    "Tumor These malignant features stand in contrast to benign glandular inclusions, which may be present but lack significant cytologic atypia and mitotic activity."
+  ],
+  "No Tumor (Negative Lymph Nodes)": [
+    "Normal The lymph node demonstrates a preserved architecture with distinct cortical, paracortical, and medullary regions.",
+    "Normal Reactive follicular hyperplasia is present, characterized by well-defined germinal centers containing a mixed population of lymphoid cells.",
+    "Normal The subcapsular and medullary sinuses are patent and contain scattered benign histiocytes, but are free of atypical epithelial cells.",
+    "Normal The background lymphoid population is polymorphous, comprising small lymphocytes, immunoblasts, and plasma cells, consistent with a reactive state.",
+    "Normal No single atypical cells, cohesive clusters, or glandular formations indicative of metastatic carcinoma are identified on morphologic review.",
+    "Normal Careful evaluation for mimics of metastasis reveals no evidence of benign glandular inclusions or ectopic mammary tissue.",
+    "Normal Small, benign nests of nevus cells, a potential pitfall for melanoma, are not identified within the lymph node capsule.",
+    "Normal The nodal sinuses contain indigenous dendritic reticulum cells, which are distinguished from metastatic cells by their characteristic morphology.",
+    "Normal Evaluation shows no degenerated epithelial cells associated with hemosiderin-laden macrophages, which would be suggestive of mechanical transport from a prior biopsy.",
+    "Normal Overall, the histopathologic features are those of a reactive lymph node with no evidence of malignancy (pN0)."
+  ],
+  "Lung Adenocarcinoma (LUAD)": [
+    "LUAD The tumor demonstrates glandular differentiation, characterized by the formation of variably-sized acini and complex papillary structures with fibrovascular cores.",
+    "LUAD A lepidic growth pattern is also present, where neoplastic nonmucinous columnar cells line intact alveolar septa.",
+    "LUAD Focally, more aggressive patterns are noted, including solid sheets of tumor cells and micropapillary tufts lacking fibrovascular support.",
+    "LUAD The neoplastic cells exhibit moderate nuclear pleomorphism, with irregular nuclear contours, vesicular chromatin, and prominent eosinophilic nucleoli.",
+    "LUAD Cytoplasm is generally moderate in amount and eosinophilic, with evidence of intracytoplasmic mucin production confirmed by special stains.",
+    "LUAD In association with the invasive components, a prominent desmoplastic stromal response is identified.",
+    "LUAD Tumor cells are seen spreading through air spaces distant from the main mass, and direct invasion into the visceral pleura is present.",
+    "LUAD Immunohistochemical studies confirm pulmonary origin, showing strong and diffuse positivity for TTF-1 and Napsin A.",
+    "LUAD The tumor cells are negative for squamous markers, including p63 and CK5/6, further supporting the diagnosis of adenocarcinoma."
+  ],
+  "Lung Squamous Cell Carcinoma (LUSC)": [
+    "LUSC Microscopic examination reveals a malignant neoplasm arranged in infiltrative nests and irregular sheets.",
+    "LUSC The diagnosis of squamous cell carcinoma is established by the definitive presence of intercellular bridges and foci of keratinization.",
+    "LUSC Keratin formation is conspicuous, manifesting as both individual eosinophilic cells and classic, whorled structures known as keratin pearls.",
+    "LUSC A prominent feature is central comedo-type necrosis within the larger tumor nests, which often leads to cavitation.",
+    "LUSC The neoplastic cells exhibit significant cytologic atypia, characterized by enlarged, pleomorphic nuclei with irregular contours and coarse chromatin.",
+    "LUSC Adjacent bronchial mucosa frequently demonstrates precursor lesions, including squamous metaplasia and full-thickness carcinoma in situ.",
+    "LUSC In peripheral locations, the tumor may demonstrate an alternative architecture, filling the alveolar lumens in a lepidic-like fashion.",
+    "LUSC Immunohistochemical analysis confirms the squamous lineage with strong and diffuse nuclear positivity for p40 and p63.",
+    "LUSC The tumor cells are characteristically negative for adenocarcinoma markers such as TTF-1, aiding in differential diagnosis."
+  ],
+  "Clear Cell Renal Cell Carcinoma (ccRCC)": [
+    "ccRCC The tumor exhibits a predominantly solid, nested, or acinar architectural pattern.",
+    "ccRCC A delicate, arborizing network of thin-walled blood vessels characteristically traverses the stroma, separating the tumor cell nests.",
+    "ccRCC Neoplastic cells possess abundant, optically clear to faintly granular eosinophilic cytoplasm due to intracellular glycogen and lipid accumulation.",
+    "ccRCC Tumor cell nuclei are generally round and centrally located, with their features forming the basis for WHO/ISUP histologic grading.",
+    "ccRCC Histologic grading is primarily determined by nucleolar prominence, with higher grades defined by conspicuous eosinophilic nucleoli visible at progressively lower magnifications.",
+    "ccRCC High-grade features may include marked nuclear pleomorphism, sarcomatoid transformation, or rhabdoid cells with eccentric nuclei and eosinophilic inclusions.",
+    "ccRCC The intervening stroma is characteristically scant and non-desmoplastic, often containing a variable lymphoplasmacytic infiltrate.",
+    "ccRCC Areas of hemorrhage, coagulative tumor necrosis, and cystic degeneration are frequently identified.",
+    "ccRCC Immunohistochemically, the tumor cells characteristically co-express epithelial markers and vimentin, and are diffusely positive for PAX8."
+  ],
+  "Papillary Renal Cell Carcinoma (pRCC)": [
+    "pRCC The tumor is characterized by a predominantly papillary architecture, with neoplastic cells arranged on branching fibrovascular cores.",
+    "pRCC In the more typical Type 1 areas, the papillae are lined by a single layer of low cuboidal cells with scanty, pale cytoplasm and low-grade nuclei.",
+    "pRCC Focally, other areas exhibit a Type 2 morphology, characterized by pseudostratified epithelium composed of cells with abundant eosinophilic cytoplasm and higher-grade nuclei.",
+    "pRCC The fibrovascular cores of the papillae frequently contain prominent aggregates of foamy macrophages and scattered psammoma bodies.",
+    "pRCC The neoplasm forms a well-demarcated mass, often surrounded by a thick fibrous capsule, with the papillary structures filling a cystic space.",
+    "pRCC Nuclear grade, assessed by the WHO/ISUP system, is variable, ranging from inconspicuous nucleoli to those that are prominent and eosinophilic at low power magnification.",
+    "pRCC In some regions, the papillae are compacted and fused, creating a solid or pseudo-alveolar growth pattern.",
+    "pRCC Degenerative changes are noted, including intracytoplasmic hemosiderin deposition within the tumor cells, a common finding in this entity."
+  ],
+  "Chromophobe Renal Cell Carcinoma (chRCC)": [
+    "chRCC The tumor is arranged in solid sheets and broad alveolar nests separated by a delicate vasculature.",
+    "chRCC Neoplastic cells are polygonal with abundant, pale eosinophilic to flocculent cytoplasm and exceptionally prominent cell membranes, imparting a \"plant-cell\" appearance.",
+    "chRCC A second population of cells with more densely eosinophilic, granular cytoplasm is also present.",
+    "chRCC Many of the tumor cells, particularly the eosinophilic variant, exhibit distinct perinuclear halos.",
+    "chRCC The nuclei are characterized by markedly irregular, wrinkled nuclear membranes, often described as \"raisinoid.\"",
+    "chRCC Nuclear chromatin is typically condensed and hyperchromatic, and binucleation is a frequent finding.",
+    "chRCC Significant tumor necrosis and hemorrhage are conspicuously absent.",
+    "chRCC Foci of stromal dystrophic calcification are noted."
+  ]
+}

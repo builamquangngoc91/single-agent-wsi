@@ -27,7 +27,7 @@ if not _GEMINI_API_KEY:
 
 # You can tweak temperature, max_tokens, etc. here if desired.
 _default_llm = LLM(
-    model="gemini/gemini-2.5-flash-preview-04-17",
+    model="gemini/gemini-2.5-pro",
     api_key=_GEMINI_API_KEY,
     temperature=0.2,
 )
